@@ -123,6 +123,20 @@ svg {
 }
 
 /*utility classes*/
+
+.visually-hidden {
+  position: absolute;
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0,0,0,0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
 .text-primary-400 {
     color: var(--clr-primary-400);
 }
@@ -241,4 +255,22 @@ body {
 .button[data-type = "inverted"]:focus-visible {
     background-color: var(--clr-neutral-100);
     color: var(--clr-accent-300);
+}
+
+/* Navigation */
+
+.primary-header {
+    margin-top: var(--size-700);
+    display: flex;
+}
+
+.mobile-nav-toggle {
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    padding: 0.5em;
+}
+
+.mobile-nav-toggle .icon-close {
+    display: none;
 }
